@@ -29,13 +29,13 @@ const Header = () => {
   }, [isMenuOpen]);
 
   // close on ESC
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === "Escape") setIsMenuOpen(false);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  // useEffect(() => {
+  //   const onKey = (e) => {
+  //     if (e.key === "Escape") setIsMenuOpen(false);
+  //   };
+  //   window.addEventListener("keydown", onKey);
+  //   return () => window.removeEventListener("keydown", onKey);
+  // }, []);
 
   return (
     <>
