@@ -1,5 +1,6 @@
 import React from "react";
-import hero from "../assets/hero-section.jpg";
+import hero from "../assets/hero-section.png";
+import sofa from "../assets/sofa-hero.png";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -19,18 +20,17 @@ const Hero = () => {
           {/* Left Content */}
           <div className="w-full p-6 sm:p-10 lg:p-5 bg-opacity-80 rounded-2xl">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl text-gray-900 leading-snug">
-              Enhance Your{" "}
-              <span className="text-[#41334E] font-bold">Look</span> With <br />
-              <span className="text-[#41334E] font-bold">Glam</span> Essentials
+              Transform Your{" "}
+              <span className="text-[#41334E] font-bold">Home</span> With <br />
+              <span className="text-[#41334E] font-bold">Timeless</span> Décor
             </h1>
 
             <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-3xl">
-              Discover premium beauty with our cosmetic collection, crafted to
-              enhance your natural glow, boost confidence, and deliver flawless
-              elegance every day with trusted, affordable products.
+              Discover stylish sofas, dining tables, tea tables, curtains, and
+              more – designed to bring comfort, elegance, and warmth into every
+              corner of your home.
             </p>
 
-           
             {/* Button */}
             <Link
               to="/collection"
@@ -48,13 +48,13 @@ const Hero = () => {
             </Link>
 
             {/* Small Product Card */}
-            <div className="mt-10 sm:mt-20 bg-white rounded-xl shadow-md p-4 w-full sm:w-[249px] h-auto sm:h-[210.7px] flex flex-col justify-between">
+            <div className="mt-10 sm:mt-20 bg-white rounded-xl shadow-md p-3 w-full sm:w-[249px] h-auto sm:h-[210.7px] flex flex-col justify-between">
               {/* Product Image Container */}
               <div className="w-full h-[130px] flex justify-center items-center rounded-lg overflow-hidden">
                 <img
-                  src={hero} // Replace with actual product image
+                  src={sofa} // Replace with actual product image
                   alt="Lip Serum"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-fill rounded-lg"
                 />
               </div>
 
