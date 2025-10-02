@@ -1,6 +1,6 @@
 import React from "react";
-import hero from "../assets/hero-section.png";
-import sofa from "../assets/sofa-hero.png";
+import hero from "../assets/hero.webp";
+import sofa from "../assets/sofa2.png";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -34,8 +34,8 @@ const Hero = () => {
             {/* Button */}
             <Link
               to="/collection"
-              className="mt-8 sm:mt-10 lg:w-fit flex items-center justify-center sm:justify-start gap-3 
-             bg-[#41334E] text-white px-4 py-3 rounded-full font-bold text-xs sm:text-sm 
+              className="mt-8 sm:mt-10 lg:w-fit lg:text-[12px] flex items-center justify-center sm:justify-start gap-3 
+             bg-[#41334E] text-white px-4 py-3 rounded-full  text-xs sm:text-sm 
              hover:bg-[#472f47] transition-all w-full sm:w-auto group"
             >
               Check Our Modern Collection
@@ -47,14 +47,14 @@ const Hero = () => {
               </span>
             </Link>
 
-            {/* Small Product Card */}
+            {/* Small Product Card - Enhanced for mobile responsiveness */}
             <div className="mt-10 sm:mt-20 bg-white rounded-xl shadow-md p-3 w-full sm:w-[249px] h-auto sm:h-[210.7px] flex flex-col justify-between">
               {/* Product Image Container */}
-              <div className="w-full h-[130px] flex justify-center items-center rounded-lg overflow-hidden">
+              <div className="w-full h-[130px] sm:h-[130px] flex justify-center items-center rounded-lg overflow-hidden">
                 <img
-                  src={sofa} // Replace with actual product image
-                  alt="Lip Serum"
-                  className="w-full h-full object-fill rounded-lg"
+                  src={sofa}
+                  alt="Stylish Sofa"
+                  className="max-w-full h-full object-cover" // ✅ Perfect fit without distortion
                 />
               </div>
 
