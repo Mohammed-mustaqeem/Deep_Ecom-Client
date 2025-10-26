@@ -12,7 +12,8 @@ const Home = () => {
       <Features />
       <NewArrivals />
       <PopularProduct />
-      <div className="hidden sm:block  max-padd-container mt-28 bg-[url('/src/assets/banner.jpg')] bg-cover bg-center bg-no-repeat h-[300px]" />
+      <div className="hidden sm:block relative left-1/2 right-1/2 -mx-[50vw] w-screen mt-28 bg-[url('/src/assets/banner.jpg')] bg-cover bg-center bg-no-repeat h-[270px]" />
+
       <Testimonial />
     </div>
   );
